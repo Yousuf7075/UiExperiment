@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".spinner.SpinnerActivity">
+
+    <com.skydoves.powerspinner.PowerSpinnerView
+        android:id="@+id/spinnerView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background2"
+        android:hint="@string/item_1"
+        android:padding="10dp"
+        android:textColor="@color/white_93"
+        android:textColorHint="@color/white_70"
+        android:textSize="14.5sp"
+        app:spinner_arrow_gravity="end"
+        app:spinner_arrow_padding="8dp"
+        app:spinner_divider_color="@color/white_70"
+        app:spinner_divider_show="true"
+        app:spinner_divider_size="0.4dp"
+        app:spinner_item_array="@array/items"
+        app:spinner_popup_animation="dropdown"
+        app:spinner_popup_background="@color/background800"
+        app:spinner_popup_elevation="14dp"
+        app:spinner_arrow_drawable="@drawable/ic_baseline_keyboard_arrow_down"
+        app:spinner_arrow_show="true"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
